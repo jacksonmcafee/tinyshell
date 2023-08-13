@@ -130,7 +130,7 @@ int main (int argc, char* argv[]) {
      if (argc == 1) {
           // no arguments passed, enter interactive mode
           // repeats until EOF is reached
-          printf("prompt> ");
+          printf("tinysh $ ");
           
           while (fgets(line, sizeof(line), stdin)) {
                // parse through argv 
@@ -161,7 +161,7 @@ int main (int argc, char* argv[]) {
                if (quit_flag) { exit(0); }
 
                // prompt again for next loop
-               printf("prompt> ");
+               printf("tinysh $ ");
           }
 
      } else if (argc == 2) {
